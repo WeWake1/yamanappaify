@@ -77,7 +77,7 @@ use wasm_bindgen::{JsCast, JsValue};
 #[cfg(target_arch = "wasm32")]
 use web_sys::{Worker, WorkerOptions, WorkerType, js_sys};
 
-pub struct ObamifyApp {
+pub struct YammanappaifyApp {
     //prev_frame_time: std::time::Instant,
     // UI state
     size: (u32, u32),
@@ -165,7 +165,7 @@ pub struct ObamifyApp {
     reverse: bool,
 }
 
-impl ObamifyApp {
+impl YammanappaifyApp {
     fn apply_sim_init(
         &mut self,
         device: &wgpu::Device,
@@ -845,12 +845,12 @@ impl ObamifyApp {
             .and_then(|v| v.as_string())
             .and_then(|url| url.rsplit('/').next().map(|s| format!("./{}", s)))
             .unwrap_or_else(|| {
-                // Fallback: parse from Error stack trace to find obamify-{hash}.js
+                // Fallback: parse from Error stack trace to find yammanappaify-{hash}.js
                 let error = js_sys::Error::new("stack trace");
                 if let Ok(stack_val) = js_sys::Reflect::get(&error, &JsValue::from_str("stack")) {
                     if let Some(stack) = stack_val.as_string() {
-                        // Look for obamify-{hash}.js in the stack
-                        if let Some(start) = stack.find("obamify-") {
+                        // Look for yammanappaify-{hash}.js in the stack
+                        if let Some(start) = stack.find("yammanappaify-") {
                             let rest = &stack[start..];
                             if let Some(end) = rest.find(".js") {
                                 let filename = &rest[..end + 3];
@@ -860,7 +860,7 @@ impl ObamifyApp {
                     }
                 }
 
-                String::from("./obamify.js")
+                String::from("./yammanappaify.js")
             });
 
             // Use worker.js and pass the script name as a query parameter

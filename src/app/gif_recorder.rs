@@ -4,7 +4,7 @@ use std::sync::{Arc, atomic::AtomicBool};
 
 use color_quant::NeuQuant;
 
-use crate::{ObamifyApp, app::SeedColor};
+use crate::{YammanappaifyApp, app::SeedColor};
 
 pub const GIF_FRAMERATE: u32 = 8;
 pub const GIF_RESOLUTION: u32 = 400;
@@ -234,14 +234,14 @@ impl GifRecorder {
 
     pub(crate) fn get_name(&self, name: String, reverse: bool) -> String {
         if reverse {
-            format!("unobamify_{}", name)
+            format!("unyammanappaify_{}", name)
         } else {
-            format!("obamify_{}", name)
+            format!("yammanappaify_{}", name)
         }
     }
 }
 
-impl ObamifyApp {
+impl YammanappaifyApp {
     pub fn get_color_image_data(
         &mut self,
         device: &wgpu::Device,

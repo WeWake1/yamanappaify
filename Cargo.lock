@@ -2370,39 +2370,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "obamify"
-version = "0.3.0"
-dependencies = [
- "bytemuck",
- "color_quant",
- "console_error_panic_hook",
- "eframe",
- "egui",
- "egui-wgpu",
- "egui_extras",
- "env_logger",
- "frand",
- "futures",
- "futures-intrusive",
- "gif",
- "image",
- "indexmap",
- "log",
- "opener",
- "palette",
- "pathfinding",
- "pollster",
- "rfd",
- "serde",
- "serde-wasm-bindgen",
- "uuid",
- "wasm-bindgen",
- "wasm-bindgen-futures",
- "web-sys",
- "wgpu",
-]
-
-[[package]]
 name = "objc"
 version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4914,6 +4881,39 @@ name = "xmlwriter"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ec7a2a501ed189703dba8b08142f057e887dfc4b2cc4db2d343ac6376ba3e0b9"
+
+[[package]]
+name = "yammanappaify"
+version = "0.3.0"
+dependencies = [
+ "bytemuck",
+ "color_quant",
+ "console_error_panic_hook",
+ "eframe",
+ "egui",
+ "egui-wgpu",
+ "egui_extras",
+ "env_logger",
+ "frand",
+ "futures",
+ "futures-intrusive",
+ "gif",
+ "image",
+ "indexmap",
+ "log",
+ "opener",
+ "palette",
+ "pathfinding",
+ "pollster",
+ "rfd",
+ "serde",
+ "serde-wasm-bindgen",
+ "uuid",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+ "web-sys",
+ "wgpu",
+]
 
 [[package]]
 name = "yoke"

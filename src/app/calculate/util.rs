@@ -171,7 +171,7 @@ impl GenerationSettings {
         if let Some((w, h, data)) = &self.custom_target {
             image::ImageBuffer::from_vec(*w, *h, data.clone()).unwrap()
         } else {
-            image::load_from_memory(include_bytes!("target256.png"))
+            image::load_from_memory(include_bytes!("YammanappaSir.png"))
                 .unwrap()
                 .to_rgb8()
         }

@@ -62,7 +62,7 @@
         { pkgs, systemStr }:
         {
           default = pkgs.rustPlatform.buildRustPackage {
-            pname = "obamify";
+            pname = "yammanappaify";
             version = "1.1";
 
             src = ./.;
@@ -95,7 +95,7 @@
             );
 
             postFixup = pkgs.lib.optionalString pkgs.stdenv.isLinux ''
-              wrapProgram $out/bin/obamify \
+              wrapProgram $out/bin/yammanappaify \
                 --set-default WINIT_UNIX_BACKEND wayland \
                 --set-default WGPU_BACKEND vulkan \
                 --set LD_LIBRARY_PATH ${
@@ -118,9 +118,9 @@
 
             meta = {
               description = "revolutionary new technology that turns any image into obama";
-              homepage = "htpps://github/Spu7Nix/obamify";
+              homepage = "htpps://github/Spu7Nix/yammanappaify";
               license = pkgs.lib.licenses.mit;
-              mainProgram = "obamify";
+              mainProgram = "yammanappaify";
             };
           };
         }
