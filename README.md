@@ -1,8 +1,8 @@
 [(try it here)](https://yammanappaify.com/)
 # yammanappaify
-revolutionary new technology that turns any image into obama
+revolutionary new technology that turns any image into yamanappa
 
-![example](example.gif)
+![example](yammanappaify_WiseTree.gif)
 
 # How to use
 

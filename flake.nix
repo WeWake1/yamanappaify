@@ -1,5 +1,5 @@
 {
-  description = "revolutionary new technology that turns any image into obama";
+  description = "revolutionary new technology that turns any image into yamanappa";
 
   inputs = {
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1";
@@ -117,7 +117,7 @@
             enableParallelBuild = true;
 
             meta = {
-              description = "revolutionary new technology that turns any image into obama";
+              description = "revolutionary new technology that turns any image into yamanappa";
               homepage = "htpps://github/Spu7Nix/yammanappaify";
               license = pkgs.lib.licenses.mit;
               mainProgram = "yammanappaify";
